@@ -46,7 +46,7 @@ def get_data(data):
             weather = item['weather'][0]['description']# weather description
             speed = item["wind"]["speed"]# wind speed
             humidity = item["main"]["humidity"]# level of humidity
-            print(f"Date:{dt_txt},Temp:{temp}°C,{weather},Wind:{speed} m/s,Humidity: {humidity}%")# Output for weather data using string formatting
+            print(f"Date:{dt_txt},Temp:{temp}°C,Weather:{weather},Wind:{speed} m/s,Humidity:{humidity}%")# Output for weather data using string formatting
     else:
         print("No forecast data found in the API") # output if the above parameters are not available
 
