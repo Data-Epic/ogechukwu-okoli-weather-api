@@ -1,9 +1,9 @@
 import requests # importing requests library
 import regex as re # impporting regex for matching strings
-from dotenv import load_dotenv # importing library for hiding api using environmental variable
+from dotenv import load_dotenv # importing library for hiding api key
 import os # importing os library
 
-load_dotenv() # loading variables in .env file as environmental variables
+load_dotenv() # loading .env file as environmental variables
 
 # Function to call the API and return the data for one city
 def call_api(city_name, api_key):
