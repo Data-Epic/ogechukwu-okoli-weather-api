@@ -55,7 +55,7 @@ def user_prompt():
     api_key = os.getenv("WEATHER_API_KEY")# variable for loading api key using os.getenv as an environmetal variable to kee
 
     while True:
-        cities = input("\nEnter city names separated by commas (e.g. New York, Tokyo): ")
+        cities = input("\nEnter city names separated by commas (e.g.Abuja,Lagos): ")
 
         if cities:
             city_list = [city.strip() for city in re.split(r',+', cities) if city.strip()]
